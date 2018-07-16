@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +8,7 @@ using uBlog.Data.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace uBlog.Web.Controllers
+namespace uBlog.Web.Areas.Api.Controllers
 {
     [Route("api/[controller]")]
     public class PostsController : Controller
