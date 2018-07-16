@@ -10,9 +10,12 @@ namespace ublog
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly string rootPath;
+
+        public Startup(IConfiguration configuration,IHostingEnvironment env)
         {
             Configuration = configuration;
+            rootPath = env.ContentRootPath;
         }
 
         public IConfiguration Configuration { get; }
