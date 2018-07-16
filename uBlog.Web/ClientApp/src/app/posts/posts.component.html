@@ -1,0 +1,17 @@
+<p>
+  posts works!
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>slug</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{post.title}}</td>
+      <td>{{post.slug}}</td>
+    </tr>
+  </tbody>
+</table>

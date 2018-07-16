@@ -29,7 +29,7 @@ namespace uBlog.Web
         public static bool DbExists()
         {
             var dbFile = Path.Combine(Directory.GetCurrentDirectory(), DatabasePath);
-            return File.Exists(dbFile) && (new FileInfo(dbFile).Length > 0)
+            return File.Exists(dbFile) && (new FileInfo(dbFile).Length > 0);
         }
     }
 }
